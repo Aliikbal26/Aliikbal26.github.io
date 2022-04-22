@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="bootstrap/css/style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKKMB</title>
+</head>
+
+<body>
+    <script>
+        // function myFunction() {
+        //     var namestr = (document.fform.nama.value);
+        //     //  var nomorstr = parseInt(document.fform.nomor.value);
+        //     var tgl_lahirstr = parseFloat(document.fform.tanggal_lahir.value);
+        //     var prodistr = (document.fform.prodi.value);
+        //     var thnstr = parseInt(document.fform.tahun_lulus.value);
+
+
+        //     //     //var komentarstr = (document.fform.komentar.value);
+
+
+        //     // document.fform.oname.value = namastr;
+        //     // document.fform.otgl_lahir.value = tgl_lahirstr;
+        //     // document.fform.oprodi.value = prodistr;
+        //     // //     document.fform.oagama.value = prodistr;
+        //     // document.fform.otahun__lulus.value = thnstr;
+
+
+        //     console.log(namestr)
+        //     console.log(tgl_lahirstr)
+        //     console.log(prodistr)
+        //     console.log(thnstr)
+
+        // }
+
+        // const form = document.querySelector('.ffrom');
+
+        // form.addEventListener('.submit', (e) => {
+        //     e.preventDefault();
+
+        //     console.log(form.nama.value);
+        //     // console.log(form.nomor.value);
+        //     // console.log(form.tanggal_lahir.value);
+        //     // console.log(form.tahun_lulus.value);
+
+        // })
+        //.insertRow(+1).innerHTML =
+        function myFunction() {
+            document.getElementById('tabelData')
+            // document.getElementById('nama');
+            // document.getElementById('nomor');
+
+            console.log(getElementById('nama'))
+
+            console.log(ffrom.nama.value);
+            console.log(ffrom.nomor.value);
+            console.log(ffrom.tanggal_lahir.value);
+            console.log(ffrom.tahun_lulus.value);
+
+            `<tr>
+                    <td> Maulana Farid Paqih</td>
+                    <td>04/10/2021</td>
+                    <td>Teknik Informatika</td>
+                    <td>2018</td>
+
+            </tr>`;
+        }
+
+        // <td>'= $("tgl_lahir").val()= '</td> 
+        //             <td>'= $("prodi").val()= '</td>
+        //             <td>'= $("tahun_lulus").val()= '</td> 
+    </script>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col container">
+                <h4 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h4>
+            </div>
+        </div>
+        <form action="" method="post" id="ffrom" name="fform" class="ffrom mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <label for="nama ">Nama Lengkap</label>
+                    <input type="text" class="form-control" name="nama " id="nama" required>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <label for="nomor">No Handphone</label>
+                    <input type="text" class="form-control" name="nomor" id="nomor" required>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" required>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <label for="prodi">Jurusan</label>
+                    <select name="prodi" id="prodi" class="form-control">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Komputerisasi Akutansi">Komputerisasi Akutansi</option>
+                        <option value="Manajaeman Informatika"> Manajaeman Informasi</option>
+                        <option value="Rekayasa Perangkat Lunak"> Rekayasa Perangkat Lunak</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-2">
+                    <label for="tahun_lulus">Tahun Lulus</label>
+                    <input type="text" class="form-control" name="tahun_lulus" id="tahun_lulus" required>
+                    <button type="button" value="submit" name="submit"
+                        class="btn btn-primary btn-lg btn-block mb-2 mt-3" onclick="myFunction()">Submit</button>
+                </div>
+            </div>
+        </form>
+
+
+
+        <!-- menampilkan data -->
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h3>DAFTAR MAHASISWA</h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table id="tabelData" class="table table-striped mt-3 mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Tanggal Lahir</th>
+                        <th scope="col">Jurusan</th>
+                        <th scope="col">Tahun Lulus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr name="ffrom">
+                        <td id="onama" name="onama"></td>
+                        <td id="otgl_lahir" name="otgl_lahir"></td>
+                        <td id="oprodi" name="oprodi"></td>
+                        <td id="otahun__lulus" name="otahun_lulus"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <footer class="bg-primary text-center pb-1 pt-3">
+        <p class="text-white">
+            Created With <i class="bi bi-heart-fill text-danger"></i> By
+            <a class="text-white fw-bold" href="https://www.facebook.com/Alikbal26/">Ali Ikbal</a>
+        </p>
+    </footer>
+
+
+    <!-- <script src="bootstrap/js/bootstrap.js"></script> -->
+
+
+</body>
+
+</html>
